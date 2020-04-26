@@ -33,3 +33,32 @@ function correct(string) {
   }
   return string
 }
+
+// ALTERNATE SOLUTIONS
+/*
+const corrections = {
+  '5': 'S',
+  '0': 'O',
+  '1': 'I'
+}
+
+const correct = string => {
+  string.replace(/501/g, character => corrections[character])
+}
+
+const correct = string {
+  return string.replace(/0/g, O)
+               .replace(/1/g, I)
+               .replace(/5/g, S)
+}
+
+const correct = string => {
+  return [...string].map(a => ({
+      '5': 'S',
+      '0': 'O',
+      '1': 'I'
+  })[a]||a).join('')
+}
+
+
+*/
