@@ -28,3 +28,34 @@ function sumArray(array) {
   console.log(sum)
   return sum
 }
+
+// My answer - passed the test cases but didn't pass the attempt. WHY?
+/*
+function sumArray(array) {
+  
+  // determine the size of the array
+  // if the array contains only 1 element or nothing(it is null)
+    if (array.length < 1 || array.length === null) return 0
+    
+
+  // if the array contains more than 1 element, iterate over array
+      // establish a highest value to compare each element of the array to 
+     for (var i = 0; i < array.length; i++) {
+  // for each element of the array, determine if it is the highest value
+       var highest = Math.max(...array)
+       var lowest = Math.min(...array)
+  // remove the lowest value from the input array
+  // remove the highest value from the input array
+  // store remaining values in a new array
+       var lowArray = array.filter(number => number > lowest)
+       console.log(lowArray)
+       var highArray = lowArray.filter(number => number < highest)
+       console.log(highArray)
+       
+       var sum = highArray.reduce((a,b) => a + b, 0)
+     
+   // return sum of the new array
+       console.log(sum)
+       return sum
+     }
+     */
