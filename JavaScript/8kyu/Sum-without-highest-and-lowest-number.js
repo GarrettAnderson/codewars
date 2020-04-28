@@ -58,4 +58,10 @@ function sumArray(array) {
        console.log(sum)
        return sum
      }
+     
+  PASSED THE FOLLOWING TEST CASES
+     Test.assertEquals(sumArray([ 6, 2, 1, 8, 10 ]), 16);
+     Test.assertEquals(sumArray([1]), 0)
+     Test.assertEquals(sumArray([]), 0)
+
      */
