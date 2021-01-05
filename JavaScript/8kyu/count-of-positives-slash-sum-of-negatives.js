@@ -8,13 +8,16 @@ function countPositivesSumNegatives(nums) {
   // A: Retrun sumNeg.sum()
 
   let pos = []
+  let posLength = 0
   let sumNeg = 0
   let negArr = []
 
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] > 0) {
       pos.push(nums[i])
-//       console.log(pos.length)
+      posLength = pos.length
+      console.log(posLength)
+
     } else if (nums[i] < 0) {
       negArr.push(nums[i])
       console.log(negArr)
@@ -22,9 +25,13 @@ function countPositivesSumNegatives(nums) {
                         // and adding the positive numbers
                         // then finally multiplying the final value for sum by -1
 //       return negArr.reduce(function(a,b){ return a + b; });
-      console.log(negArr.reduce(function(a,b){ return a + b; }));
+//       console.log(negArr.reduce(function(a,b){ return a + b; }));
+      sumNeg = negArr.reduce(function(a,b){ return a + b; })
+      console.log(sumNeg)
     }
   }
+
+
 
 //     for (let j = 0; j < negArr.length; j++) {
 //       console.log(negArr[j])
@@ -36,9 +43,9 @@ function countPositivesSumNegatives(nums) {
 //   }, 0)
 
 // console.log(pos.length)
-console.log(sumNeg)
+// console.log(sumNeg)
 
-  return pos.length
+//   return posLength
 //   return sumNeg
 
 
@@ -60,7 +67,6 @@ console.log(sumNeg)
 //       console.log(negatives)
 //     return [positives, negatives]
 }
-
 
 
 
