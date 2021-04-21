@@ -1,4 +1,4 @@
-Array.prototype.filter = function (array) {
+Array.prototype.filter = function (callBackFunction) {
   //nothing here, you will feel pretty awesome to write down by yourself
   //have fun
 
@@ -9,20 +9,16 @@ Array.prototype.filter = function (array) {
   // 3. If the current value is less than or equal to 3, dont do anything
 
 
-  for (var i = 0; i <= array.length; i++) {
+  for (var i = 0; i <= this.length; i++) {
 
   var greaterThan = []
-  var lessThanEqual = []
 
-    console.log(array.length)
-
-    if (array[i] > 3 === true) {
-//       greaterThan.push(array[i])
-       console.log('true')
+    if (callBackFunction(this[i])) {
+      greaterThan.push(this[i])
+      console.log('true')
     } else {
       console.log('false')
-//       lessThanEqual.push(array[i])
     }
-//     console.log(greaterThan)
   }
+  return greaterThan
 }
