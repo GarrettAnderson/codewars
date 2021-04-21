@@ -9,20 +9,20 @@ Array.prototype.filter = function (array) {
   // 3. If the current value is less than or equal to 3, dont do anything
 
 
+  for (var i = 0; i <= array.length; i++) {
+
   var greaterThan = []
   var lessThanEqual = []
 
-  for (var i = 0; i < array.length; i++) {
+    console.log(array.length)
 
-    console.log(i)
-
-    if (array[i] > 3 ) {
-      greaterThan.push(array[i])
+    if (array[i] > 3 === true) {
+//       greaterThan.push(array[i])
+       console.log('true')
     } else {
-      lessThanEqual.push(array[i])
+      console.log('false')
+//       lessThanEqual.push(array[i])
     }
-return greaterThan
+//     console.log(greaterThan)
   }
-
-
 }
