@@ -12,7 +12,7 @@ Array.prototype.filter = function (array) {
   var greaterThan = []
   var lessThanEqual = []
 
-  for (var i = 0; i <= array.length; i++) {
+  for (var i = 0; i < array.length; i++) {
 
     console.log(i)
 
