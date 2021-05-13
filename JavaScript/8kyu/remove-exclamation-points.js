@@ -16,6 +16,7 @@ function removeExclamationMarks(s) {
       i--
       }
     }
-    console.log(str)
+//     console.log(str.join(''))
+    return str.join('')
 
 }
