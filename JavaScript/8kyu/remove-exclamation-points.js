@@ -11,12 +11,10 @@ function removeExclamationMarks(s) {
   let str = s.split('')
 //   console.log(str)
 
- for (let i = 0; i <= str.length; i++) {
-   if (str.includes('!') === true) {
-     str.splice(i,' ')
-//      console.log(str.join(''))
+  let filtered = str.filter((el, i) => {
+    if (el === '!') {
+      console.log('testing')
     }
-   console.log(str.join(''))
- }
+  })
 
 }
