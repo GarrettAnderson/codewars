@@ -9,13 +9,13 @@ function removeExclamationMarks(s) {
     // if the value at the current index is NOT an exclamation point, do nothing
 
   let str = s.split('')
-//   console.log(str)
 
-  let filtered = str.filter((el, i) => {
-    if (el === '!') {
-      let removed = str.splice(el)
-//       console.log(el)
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === '!') {
+      str.splice(i, 1)
+      i--
+      }
     }
-  })
+    console.log(str)
 
 }
