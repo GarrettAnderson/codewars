@@ -13,7 +13,8 @@ function removeExclamationMarks(s) {
 
   let filtered = str.filter((el, i) => {
     if (el === '!') {
-      console.log('testing')
+      let removed = str.splice(el)
+//       console.log(el)
     }
   })
 
