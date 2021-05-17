@@ -20,10 +20,6 @@ function colorOf(r,g,b){
     }
   }
 
-    console.log(colors)
-
-
-
-
+  console.log(colors)
 
 }
