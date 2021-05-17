@@ -7,5 +7,13 @@ function sc(floor){
   let scream = 'Aa~ '.repeat(floor - 1)
   console.log(scream)
 
-
+  if (floor > 1 || floor <= 6) {
+    console.log(scream + 'Pa! Aa!')
+    return scream + 'Pa! Aa!'
+  } else if (floor > 6) {
+    console.log(scream + 'Pa!')
+    return scream + 'Pa!'
+  } else {
+    return ''
+  }
 }
