@@ -3,7 +3,7 @@ function colorOf(r,g,b){
 
   let red = r.toString(16)
   let grn = g.toString(16)
-  let blue = 10.toString(16)
+  let blue = b.toString(16)
   let colors = [red, grn, blue]
 
 //   console.log(red.toString(16))
@@ -20,6 +20,10 @@ function colorOf(r,g,b){
     }
   }
 
-  console.log(colors)
+    console.log(colors)
+
+
+
+
 
 }
