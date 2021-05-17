@@ -4,6 +4,8 @@ function colorOf(r,g,b){
   let red = r.toString(16)
   let grn = g.toString(16)
   let blue = b.toString(16)
+  let testNum = 155
+  let testing = testNum.toString(16)
   let colors = [red, grn, blue]
 
 //   console.log(red.toString(16))
@@ -21,7 +23,7 @@ function colorOf(r,g,b){
     console.log(colors[i])
   }
 
-//     console.log(colors)
-
+    console.log(colors.join(''))
+    return '#' + colors.join('')
 
 }
