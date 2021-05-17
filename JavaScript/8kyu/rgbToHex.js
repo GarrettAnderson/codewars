@@ -4,22 +4,27 @@ function colorOf(r,g,b){
   let red = r.toString(16)
   let grn = g.toString(16)
   let blue = b.toString(16)
+  let testNum = 155
+  let testing = testNum.toString(16)
   let colors = [red, grn, blue]
 
 //   console.log(red.toString(16))
 //   console.log(grn.toString(16))
 //   console.log(blue.toString(16))
 
-//     console.log(colors)
+    console.log(colors)
 
   for (let i = 0; i <= colors.length; i++) {
     if (colors[i] === '0') {
 //       console.log(colors[i] + 0)
         colors[i] = colors[i] + '0'
+    } else if (colors[i].length < 2) {
+      colors[i] = '0' + colors[i]
         i--
     }
   }
 
-  console.log(colors)
+    console.log(colors)
+
 
 }
