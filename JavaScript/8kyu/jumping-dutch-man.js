@@ -1,8 +1,11 @@
 function sc(floor){
-  return ?
+//   return ?
 
     // create a variable to store the string for mr despair
         // take number from input and if greater than 1, respond
         // according to instructions: floor - 1 amount of 'Aa~' ...
+  let testScr = 'Aa~ '.repeat(floor - 1)
+  console.log(testScr)
+
 
 }
