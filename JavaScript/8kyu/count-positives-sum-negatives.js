@@ -12,7 +12,7 @@ function countPositivesSumNegatives(nums) {
   let sumNeg = 0;
   let negArr = [];
 
-  //   while (nums) {
+  while (nums != null && nums.length >= 1) {
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] > 0) {
       pos.push(nums[i])
@@ -37,47 +37,12 @@ function countPositivesSumNegatives(nums) {
 //     console.log(posLength)
 //     console.log(sumNeg)
   }
-// }
 
   return [posLength, sumNeg]
 
+  }
+
+  // console.log('it is null')
+  return []
+
 }
-
-
-
-
-
-
-//     for (let j = 0; j < negArr.length; j++) {
-//       console.log(negArr[j])
-//       sumNeg += (parseInt(negArr[i]))
-//     }
-
-//   sumNeg = negArr.reduce(function(a,b) {
-//     console.log(a + b)
-//   }, 0)
-
-// console.log(pos.length)
-// console.log(sumNeg)
-
-//   return posLength
-//   return sumNeg
-
-
-
-
-
-// function countPositivesSumNegatives(input) {
-//     if (input === null || input.length === 0) {
-//       return []
-//     }
-
-//     const positives = input
-//       .filter((number) => Math.sign(number) === 1)
-//       .reduce((a) => a + 1, 0)
-//       console.log(positives)
-//     const negatives = input
-//       .filter((number) => Math.sign(number) === -1)
-//       .reduce((a, b) => a + b, 0)
-//       console.log(negatives)
-//     return [positives, negatives]
