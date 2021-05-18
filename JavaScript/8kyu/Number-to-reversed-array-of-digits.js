@@ -7,9 +7,10 @@ function digitize(n) {
   let revNumArr = rev.map((el, i) => {
 //     console.log(el, i)
     let parsed = parseInt(el)
-    console.log(parsed)
+//     console.log(parsed)
+    newArr.push(parsed)
   })
-//   console.log(newArr)
+  console.log(newArr)
 //   console.log(revNumArr)
 
 }
