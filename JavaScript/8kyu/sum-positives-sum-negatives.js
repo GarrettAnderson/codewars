@@ -39,6 +39,13 @@ function countPositivesSumNegatives(nums) {
 
   return [posLength, sumNeg]
 
+}
+
+
+
+
+
+
 //     for (let j = 0; j < negArr.length; j++) {
 //       console.log(negArr[j])
 //       sumNeg += (parseInt(negArr[i]))
@@ -72,4 +79,3 @@ function countPositivesSumNegatives(nums) {
 //       .reduce((a, b) => a + b, 0)
 //       console.log(negatives)
 //     return [positives, negatives]
-}
