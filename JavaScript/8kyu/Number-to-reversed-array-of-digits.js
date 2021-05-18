@@ -10,7 +10,7 @@ function digitize(n) {
 //     console.log(parsed)
     newArr.push(parsed)
   })
-  console.log(newArr)
+// console.log(newArr)
 //   console.log(revNumArr)
-
+  return newArr
 }
