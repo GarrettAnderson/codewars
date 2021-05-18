@@ -1,9 +1,14 @@
 function digitize(n) {
-  let answer = []
-  let place = 1
-  while (n / place >= 1) {
-    answer.push(Math.floor(n / place) % 10)
-    place *= 10
-  }
-  return answer
+  //code here
+
+  let newArr = []
+  let nums = n.toString().split("")
+  let rev = nums.reverse()
+  let revNumArr = rev.map((el, i) => {
+    console.log(el, i)
+    newArr.push(el)
+  })
+  console.log(newArr)
+//   console.log(revNumArr)
+
 }
