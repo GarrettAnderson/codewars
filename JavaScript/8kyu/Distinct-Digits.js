@@ -26,23 +26,7 @@ function distinctDigitYear(year) {
           // A: IF NO numbers repeat, return that value
 
 
-let currentYr = year
-let nextYr
-let compareYrs = (accumulator, currentValue) => {
-  if (accumulator === currentValue) {
-    currentYr += 1
-    console.log(currentYr)
-  } else {
-//     console.log('next year')
-//     return compareYrs(currentYr)
-  }
-
-  }
-
-
-// console.log(year.toString())
-
-currentYr = year.toString().split("")
+let currentYr = year.toString().split("")
 console.log(currentYr)
 
 // for (let i = 0; i < currentYr.length; i++) {
