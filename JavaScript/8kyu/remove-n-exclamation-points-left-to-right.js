@@ -7,8 +7,8 @@ function remove(s,n) {
 //     console.log('counting')
     if (splitStr[i] === '!') {
       let removed = splitStr.splice(i, 1)
-      i--
-      console.log(splitStr)
+//       i--
     }
   }
+  console.log(splitStr)
 }
