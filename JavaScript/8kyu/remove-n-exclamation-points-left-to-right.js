@@ -1,4 +1,4 @@
-function remove(s,n){
+function remove(s,n) {
   //coding and coding....
 
   let splitStr = s.split("")
@@ -6,11 +6,10 @@ function remove(s,n){
   for (let i = 0; i < n; i++) {
 //     console.log('counting')
     if (splitStr[i] === '!') {
-      let removed = splitStr.splice(i, n, '')
-      console.log(removed)
-//       i--
+      let removed = splitStr.splice(i, 1)
+      i--
     }
+      console.log(splitStr)
   }
-
 
 }
