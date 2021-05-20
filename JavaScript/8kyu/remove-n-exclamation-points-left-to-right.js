@@ -8,8 +8,7 @@ function remove(s,n) {
     if (splitStr[i] === '!') {
       let removed = splitStr.splice(i, 1)
       i--
-    }
       console.log(splitStr)
+    }
   }
-
 }
