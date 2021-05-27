@@ -4,14 +4,16 @@ function remove(s,n){
   let splitStr = s.split('')
 
   for (let i = 0; i < n; i++) {
-//     console.log('counting')
     if (splitStr[i] === '!') {
-      let removed = splitStr.splice(i, n, '')
-      console.log(splitStr.join(''))
-//       i--
-    }
+//       console.log('counting')
+      let removed = splitStr.splice(i, 3)
+//       console.log(removed)
+
+      }
   }
 
+  console.log(splitStr.join(''))
   return splitStr.join('')
+
 
 }
