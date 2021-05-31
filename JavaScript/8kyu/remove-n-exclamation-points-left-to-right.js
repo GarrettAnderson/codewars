@@ -9,7 +9,7 @@ function remove(s,n){
 //       console.log('counting')
       let removed = splitStr.splice(i, 1, '')
       n -= 1
-      console.log(n)
+//       console.log(n)
       }
 //     else {
 //         i--
@@ -18,7 +18,5 @@ function remove(s,n){
   }
 
   console.log(splitStr.join(''))
-  return splitStr.join('')
-
-
+  return splitStr.join('')  
 }
