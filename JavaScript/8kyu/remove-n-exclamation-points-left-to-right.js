@@ -3,7 +3,7 @@ function remove(s,n){
 
   let splitStr = s.split('')
 
-  for (let i = 0; i < n && n > 0; i++) {
+  for (let i = 0;  i < splitStr.length && n > 0; i++) {
 //     console.log(n)
     if (splitStr[i] === '!') {
 //       console.log('counting')
@@ -19,5 +19,6 @@ function remove(s,n){
 
   console.log(splitStr.join(''))
   return splitStr.join('')
-    
+
+
 }
